@@ -1,0 +1,21 @@
+h1 {
+  margin-bottom: 0.5em;
+}
+.collage {
+  border-radius: 0.5em;
+  border-color: color-mix(in lab, #aaa, #0f0f0f 50%);
+}
+p {
+  margin-top: 0;
+  margin-bottom: calc(0.5em * 2);
+  text-wrap: pretty;
+}
+:not(.content) > h2 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--font-family-mono);
+  margin-top: calc(0.5em * 6);
+  margin-bottom: calc(0.5em);
+  color: var(--color-midground);
+}

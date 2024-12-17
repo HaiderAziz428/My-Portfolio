@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  height: 100vh; /* Ensure it covers the full viewport */
+  background-color: #0f0f0f; /* Set the background to dark */
+}
