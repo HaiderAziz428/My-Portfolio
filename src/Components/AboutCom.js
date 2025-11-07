@@ -6,10 +6,10 @@ const AboutCom = () => {
     <main>
       <h1 className="md:mt-[calc(0.5em_*_6)">About Haidar Aziz</h1>
       <p>
-        I’m <b>Haidar Aziz</b> (a.k.a. <b>@HaidarCodes</b>) and I’m a passionate
+        I'm <b>Haidar Aziz</b> (a.k.a. <b>@HaidarCodes</b>) and I'm a passionate
         full-stack web developer with a love for coding and technology. I
-        specialize in the MERN stack, and I’m constantly learning and exploring
-        new technologies like Web3. When I’m not coding, I’m probably gaming 🎮,
+        specialize in the MERN stack, and I'm constantly learning and exploring
+        new technologies like Web3. When I'm not coding, I'm probably gaming 🎮,
         diving into sports 🏀, or exploring new trends in the tech world. I'm
         always up for a good challenge and enjoy creating innovative projects.
       </p>

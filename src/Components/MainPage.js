@@ -60,7 +60,7 @@ const MainPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/HaiderAziz428/SpotSaver-"
+              href="https://github.com/HaiderAziz428/dBank-Decentralized-Bank-"
             >
               <h3 className="flex items-center space-x-2 group underline decoration-gray-700 underline-offset-4 hover:text-yellow-300 transition-colors duration-300">
                 <span>SpotSaver</span>
@@ -91,7 +91,7 @@ const MainPage = () => {
             <a
               target="_blank"
               rel="noopener noreferrer"
-              href="https://github.com/HaiderAziz428/Drum-Kit"
+              href="https://github.com/HaiderAziz428/dBank-Decentralized-Bank-"
             >
               <h3 className="flex items-center space-x-2 group  hover:text-yellow-300 transition-colors duration-100 underline decoration-gray-700 underline-offset-4">
                 <span>Drum-Kit</span>
@@ -161,30 +161,30 @@ const MainPage = () => {
         their best work.
       </p>
       <h2 className="mt-12 mb-3">Values and Practices</h2>
-      <ul class="values-and-practices">
+      <ul className="values-and-practices">
         <li className="ml-40px">
-          <span class="value">Clarity</span>
-          <span class="arrow arrow-1">✈️</span>
+          <span className="value">Clarity</span>
+          <span className="arrow arrow-1">✈️</span>
           Showing and telling
         </li>
         <li className="ml-40px">
-          <span class="value">Inclusivity</span>
-          <span class="arrow arrow-2">✈️</span>
+          <span className="value">Inclusivity</span>
+          <span className="arrow arrow-2">✈️</span>
           Proactive advocacy
         </li>
         <li className="ml-40px">
-          <span class="value">Irreverence</span>
-          <span class="arrow arrow-3">✈️</span>
+          <span className="value">Irreverence</span>
+          <span className="arrow arrow-3">✈️</span>
           Play and experimentation
         </li>
         <li className="ml-40px">
-          <span class="value">Intention</span>
-          <span class="arrow arrow-4">✈️</span>
+          <span className="value">Intention</span>
+          <span className="arrow arrow-4">✈️</span>
           Leading with purpose
         </li>
         <li className="ml-40px">
-          <span class="value">Openness</span>
-          <span class="arrow arrow-5">✈️</span>
+          <span className="value">Openness</span>
+          <span className="arrow arrow-5">✈️</span>
           Removing barriers to entry
         </li>
       </ul>
