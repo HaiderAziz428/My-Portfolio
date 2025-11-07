@@ -1,0 +1,48 @@
+footer {
+  padding: 2em;
+  margin: 0 auto;
+}
+.Block {
+  padding-left: 2em;
+  padding-right: 2em;
+  margin: 0 auto;
+  max-width: 670px;
+}
+.copy-right {
+  font-family: var(--font-family-mono);
+}
+.celebrate-icon {
+  cursor: pointer;
+  font-size: 2rem;
+  color: #ff6347;
+  transition: transform 0.2s ease;
+}
+
+.celebrate-icon:hover {
+  transform: scaleZ(1.2); /* Hover effect to scale along the Y-axis */
+}
+
+.copy-right {
+  display: inline-block;
+  font-size: 1rem;
+}
+ul.social-links {
+  display: flex; /* Aligns list items horizontally */
+  list-style: none; /* Removes default list bullets */
+  margin: 0; /* Removes default margin */
+  padding: 0; /* Removes default padding */
+  gap: 1rem; /* Optional: adds spacing between icons */
+}
+
+ul.social-links li {
+  display: inline-block; /* Ensures each list item is treated as an inline element */
+}
+
+ul.social-links a {
+  text-decoration: none; /* Removes default link styling */
+}
+
+ul.social-links svg {
+  width: 24px; /* Set the size of the icons */
+  height: 24px;
+}

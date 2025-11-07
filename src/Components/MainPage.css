@@ -1,0 +1,83 @@
+h1 {
+  font-family: var(--font-family-sans);
+  font-size: 3.5em;
+  font-weight: 700;
+  letter-spacing: -2px;
+  line-height: 90%;
+  margin-bottom: var(--spacer);
+  text-wrap: balance;
+}
+main {
+  padding: 2em;
+  margin: 0 auto;
+  max-width: 670px;
+}
+span {
+  margin-top: 4px;
+  font-size: 0.94em;
+  display: block;
+  font-family: var(--font-family-serif);
+  font-weight: 400;
+  letter-spacing: -0.5px;
+  line-height: 85%;
+}
+:not(.content) > h2 {
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-transform: uppercase;
+  font-family: var(--font-family-mono);
+
+  color: var(--color-midground);
+}
+.values-and-practices {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.values-and-practices li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px; /* Increased spacing for better readability */
+  font-family: Arial, sans-serif; /* Clean font for better design */
+  font-size: 18px; /* Slightly larger text for better visibility */
+  line-height: 1.5;
+}
+
+.value {
+  font-weight: 500;
+  margin-right: 15px;
+  /* Darker color for contrast */
+}
+
+.arrow {
+  font-size: 24px; /* Larger arrow for better visibility */
+  margin: 0 20px;
+  display: inline-block;
+  animation: fly 3s ease-in-out infinite; /* Increased animation duration */
+  transform-origin: center center; /* Ensures the rotation happens from the center */
+  color: #3498db; /* Added color for the arrow to stand out */
+}
+
+@keyframes fly {
+  0% {
+    transform: translateX(0) rotate(0deg);
+  }
+  50% {
+    transform: translateX(0px) translateY(0px) rotate(45deg); /* More subtle flight movement */
+  }
+  100% {
+    transform: translateX(40px) translateY(0) rotate(45deg); /* Smooth arc flight path */
+  }
+}
+
+/* Optional: Add a hover effect for better interaction */
+.values-and-practices li:hover .arrow {
+  animation-play-state: paused; /* Pause animation on hover */
+  transform: translateX(0) rotate(0deg); /* Reset arrow on hover */
+  transition: transform 0.3s ease-in-out;
+}
+
+.through {
+  display: none; /* Hide the span if it isn't needed visually */
+}
