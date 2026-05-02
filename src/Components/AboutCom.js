@@ -86,7 +86,8 @@ const AboutCom = () => {
           2026 B.S. in Computer Science, Institute of Space Technology,
           Islamabad
         </li>
-        <li>2022 FSC (Pre-Engineering), Ideal Degree College, Islamabad</li>
+        <li>2022 FSC (Pre-Engineering), Ideal Degree College, Muzaffargarh</li>
+        <li>2020 Matriculation (Science), Nishat Boys High School, Multan</li>
       </ul>
 
       <h2>Press</h2>
