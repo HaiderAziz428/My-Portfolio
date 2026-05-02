@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./MainPage.css";
 
 const MainPage = () => {
@@ -9,7 +10,7 @@ const MainPage = () => {
         <br />
         +Web3 Explorer
         <br />
-        <span>
+        <span className="hero-subtitle">
           Gamer
           <br />
           Sports Enthusiast
@@ -129,7 +130,20 @@ const MainPage = () => {
         </ul>
       </div>
 
-      <h2 className="mt-12 mb-3"> Development Philosophy</h2>
+      <h2 className="mt-12 mb-3">Tech Stack</h2>
+      <div className="tech-stack">
+        {[
+          "React", "Next.js", "TypeScript", "JavaScript",
+          "Node.js", "Express", "Python",
+          "Solidity", "Web3", "RainbowKit",
+          "Tailwind CSS", "MongoDB", "Supabase",
+          "Git", "REST APIs", "Vite",
+        ].map((skill) => (
+          <span key={skill} className="tech-tag">{skill}</span>
+        ))}
+      </div>
+
+      <h2 className="mt-12 mb-3">Development Philosophy</h2>
       <p>
         I’m Muhammad Haidar Aziz, a full-stack web developer and Web3
         enthusiast, crafting digital experiences that push the boundaries of
@@ -180,9 +194,12 @@ const MainPage = () => {
         technologies.
         <br />
         <br />
-        <span className="inline-block text-lg underline decoration-gray-700 underline-offset-4 hover:text-yellow-300 transition-colors duration-300">
-          Let me know{" "}
-        </span>{" "}
+        <Link
+          to="/contact"
+          className="inline-block text-lg underline decoration-gray-700 underline-offset-4 hover:text-yellow-300 transition-colors duration-300"
+        >
+          Get in touch
+        </Link>{" "}
         and let’s build something amazing together!
       </p>
     </main>

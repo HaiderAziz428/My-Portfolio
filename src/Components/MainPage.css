@@ -1,3 +1,10 @@
+main {
+  padding: 3rem 2rem 4rem;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  animation: fadeInUp 0.5s ease both;
+}
+
 h1 {
   font-family: var(--font-family-sans);
   font-size: 3.5em;
@@ -7,28 +14,106 @@ h1 {
   margin-bottom: var(--spacer);
   text-wrap: balance;
 }
-main {
-  padding: 2em;
-  margin: 0 auto;
-  max-width: 670px;
-}
-span {
-  margin-top: 4px;
+
+.hero-subtitle {
+  margin-top: 8px;
   font-size: 0.94em;
   display: block;
   font-family: var(--font-family-serif);
   font-weight: 400;
   letter-spacing: -0.5px;
   line-height: 85%;
+  color: var(--color-text-muted);
 }
+
 :not(.content) > h2 {
   letter-spacing: 1px;
   font-weight: 400;
   text-transform: uppercase;
   font-family: var(--font-family-mono);
-
+  font-size: 0.75rem;
   color: var(--color-midground);
 }
+
+p {
+  line-height: 1.7;
+  color: var(--color-text);
+}
+
+/* Project list */
+ul.grid li a {
+  display: block;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+  text-decoration: none;
+}
+
+ul.grid li a:hover {
+  border-color: var(--color-border);
+  background-color: var(--color-surface);
+}
+
+ul.grid li a h3 {
+  font-size: 0.975rem;
+  font-weight: 600;
+  margin: 0 0 0.35rem;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  text-decoration: underline;
+  text-decoration-color: rgba(102, 102, 102, 0.5);
+  text-underline-offset: 3px;
+  transition: color 0.2s ease;
+}
+
+ul.grid li a h3 span {
+  display: inline;
+  font-size: inherit;
+  font-family: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  margin-top: 0;
+  color: inherit;
+}
+
+ul.grid li a p,
+ul.grid li a > span {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Tech stack tags */
+.tech-stack {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.tech-tag {
+  display: inline-block;
+  font-family: var(--font-family-mono);
+  font-size: 0.72rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text-muted);
+  letter-spacing: 0.02em;
+  transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.tech-tag:hover {
+  border-color: var(--color-accent);
+  color: var(--color-accent);
+}
+
+/* Values section */
 .values-and-practices {
   list-style-type: none;
   padding: 0;
@@ -38,24 +123,30 @@ span {
 .values-and-practices li {
   display: flex;
   align-items: center;
-  margin-bottom: 20px;
-  font-family: Arial, sans-serif;
-  font-size: 18px;
+  gap: 1.25rem;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.95rem;
   line-height: 1.5;
 }
 
+.values-and-practices li:last-child {
+  border-bottom: none;
+}
+
 .value {
-  font-weight: 500;
-  margin-right: 15px;
+  font-weight: 600;
+  min-width: 110px;
+  color: var(--color-text);
+  font-size: 0.95rem;
 }
 
 .arrow {
-  font-size: 24px;
-  margin: 0 20px;
+  font-size: 1rem;
   display: inline-block;
   animation: fly 3s ease-in-out infinite;
   transform-origin: center center;
-  color: #3498db;
+  color: var(--color-accent);
 }
 
 @keyframes fly {
@@ -63,10 +154,10 @@ span {
     transform: translateX(0) rotate(0deg);
   }
   50% {
-    transform: translateX(0px) translateY(0px) rotate(45deg);
+    transform: translateX(0) translateY(0) rotate(45deg);
   }
   100% {
-    transform: translateX(40px) translateY(0) rotate(45deg);
+    transform: translateX(30px) translateY(0) rotate(45deg);
   }
 }
 
