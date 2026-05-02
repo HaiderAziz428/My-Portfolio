@@ -3,5 +3,7 @@
 @tailwind utilities;
 
 #root {
-  height: 100vh; /* Ensure it covers the full viewport */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

@@ -1,38 +1,42 @@
 import React from "react";
-import { Link } from "react-router-dom"; // Import Link for navigation in React Router
-
+import { Link, useLocation } from "react-router-dom";
 import "./Header.css";
-const Header = () => {
-  return (
-    <div className="mt-5 flex justify-between items-center ml-5 mr-7">
-      <div className="logo mt-5">
-        <a href="/" rel="noopener noreferrer">
-          <img
-            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTdndmxsZzh6ZnB5OTI1aWtoa2pteHA0NzM1NGI1aDJ5d3hhYmpqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/F8JPm4ZlbE4UNjxT9Y/200.webp" // Replace with actual image URL or preview
-            alt="Logo"
-            width="100"
-          />
-        </a>
-      </div>
 
-      <ul className=" list-none flex gap-4 leading-none font-semibold text-base">
-        <li>
-          <Link to="/about" className="">
-            About
-          </Link>
-        </li>
-        <li>
-          <Link to="/marketplace" className="">
-            Marketplace
-          </Link>
-        </li>
-        <li>
-          <Link to="/contact" className="">
-            Contact
-          </Link>
-        </li>
-      </ul>
-    </div>
+const Header = () => {
+  const { pathname } = useLocation();
+
+  const navLinks = [
+    { to: "/", label: "Home" },
+    { to: "/about", label: "About" },
+    { to: "/contact", label: "Contact" },
+  ];
+
+  return (
+    <header className="site-header">
+      <div className="header-inner">
+        <Link to="/" className="site-logo" aria-label="Go to home">
+          <span className="logo-bracket">&lt;</span>
+          <span>haidar</span>
+          <span className="logo-bracket">/&gt;</span>
+        </Link>
+
+        <nav aria-label="Main navigation">
+          <ul className="nav-list">
+            {navLinks.map(({ to, label }) => (
+              <li key={to}>
+                <Link
+                  to={to}
+                  className={`nav-link${pathname === to ? " nav-link--active" : ""}`}
+                >
+                  {label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+      </div>
+    </header>
   );
 };
+
 export default Header;

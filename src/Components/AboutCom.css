@@ -1,21 +1,49 @@
+main {
+  padding: 3rem 2rem 4rem;
+  margin: 0 auto;
+  max-width: var(--max-width);
+  animation: fadeInUp 0.5s ease both;
+}
+
 h1 {
-  margin-bottom: 0.5em;
+  margin-bottom: 0.75em;
 }
+
 .collage {
-  border-radius: 0.5em;
-  border-color: color-mix(in lab, #aaa, #0f0f0f 50%);
+  width: 100%;
+  border-radius: 0.75rem;
+  border: 1px solid var(--color-border);
+  margin: 1.75rem 0;
+  display: block;
 }
+
 p {
   margin-top: 0;
-  margin-bottom: calc(0.5em * 2);
+  margin-bottom: 1.25rem;
   text-wrap: pretty;
+  line-height: 1.7;
+  color: var(--color-text);
 }
+
 :not(.content) > h2 {
   letter-spacing: 1px;
   font-weight: 400;
   text-transform: uppercase;
   font-family: var(--font-family-mono);
-  margin-top: calc(0.5em * 6);
-  margin-bottom: calc(0.5em);
+  font-size: 0.75rem;
+  margin-top: 2.5rem;
+  margin-bottom: 0.75rem;
   color: var(--color-midground);
+}
+
+ul {
+  padding-left: 1.25rem;
+  margin: 0 0 1rem;
+}
+
+ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.65;
+  color: var(--color-text);
+  font-size: 0.95rem;
 }
