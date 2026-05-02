@@ -43,7 +43,7 @@ const AboutCom = () => {
         </div>
       </div>
       <h2>Exhibitions</h2>
-      <ul class="md:list-style-none list-disc">
+      <ul className="md:list-style-none list-disc">
         <li>
           2024 Web Development Projects, Portfolio Showcase (personal website)
         </li>
@@ -57,7 +57,7 @@ const AboutCom = () => {
       </ul>
 
       <h2>Publications</h2>
-      <ul class="md:list-style-none list-disc">
+      <ul className="md:list-style-none list-disc">
         <li>
           <i>Full-Stack Web Developer Course</i>, Udemy, 2024, contributing
           learner and developer
@@ -69,7 +69,7 @@ const AboutCom = () => {
       </ul>
 
       <h2>Speaking</h2>
-      <ul class="md:list-style-none list-disc">
+      <ul className="md:list-style-none list-disc">
         <li>2024 Web Development Trends, Tech Talk, Islamabad</li>
         <li>
           2023 Tech Pathways for Students, Career Development Seminar, IST
@@ -77,7 +77,7 @@ const AboutCom = () => {
       </ul>
 
       <h2>Education and Training</h2>
-      <ul class="md:list-style-none list-disc">
+      <ul className="md:list-style-none list-disc">
         <li>
           2024 <i>Power Shift</i> Leadership Accelerator, Active Voice
         </li>
@@ -90,7 +90,7 @@ const AboutCom = () => {
       </ul>
 
       <h2>Press</h2>
-      <ul class="md:list-style-none list-disc">
+      <ul className="md:list-style-none list-disc">
         <li>Udemy Certificate of Completion, Full-Stack Web Developer</li>
         <li>GitHub, Portfolio Projects Featured</li>
       </ul>

@@ -100,13 +100,6 @@ const Footer = () => {
             <a href="/about">About</a>
           </li>
           <li className="transition duration-300 ease-in-out hover:text-yellow-300">
-            <a href="/blog">Blog</a>
-          </li>
-          <li className="transition duration-300 ease-in-out hover:text-yellow-300">
-            <a href="/favorites">Favorites</a>
-          </li>
-
-          <li className="transition duration-300 ease-in-out hover:text-yellow-300">
             <a href="/contact">Contact</a>
           </li>
         </ul>

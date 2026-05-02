@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import copy_svg from "../images/copy-text-svgrepo-com.svg";
 
 const Contact = () => {
   const [copied, setCopied] = useState(false);
@@ -24,7 +23,7 @@ const Contact = () => {
         >
           LinkedIn
           <svg
-            class="w-5 h-5 ml-1"
+            className="w-5 h-5 ml-1"
             viewBox="0 -0.5 25 25"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -34,12 +33,12 @@ const Contact = () => {
         </a>
         ,
         <a
-          href="https://x.com/haideraziz428 "
+          href="https://x.com/haideraziz428"
           className="inline-flex items-center underline decoration-gray-700 underline-offset-4 hover:text-yellow-300 transition-colors duration-300"
         >
           Twitter DM
           <svg
-            class="w-5 h-5 ml-1"
+            className="w-5 h-5 ml-1"
             viewBox="0 -0.5 25 25"
             fill="currentColor"
             xmlns="http://www.w3.org/2000/svg"
@@ -48,18 +47,18 @@ const Contact = () => {
           </svg>
         </a>
         , or an email to{" "}
-        <span class="inline relative copy-element">
+        <span className="inline relative copy-element">
           <button
             aria-label="Copy email address: haideraziz428@gmail.com"
             onClick={handleCopy}
-            class="transition-all ease-in-out duration-200 bg-[#414141] hover:bg-[#0f0f0f] hover:shadow-[inset_0_0_0_1.5px_#888888] pl-2 pr-1 p-2 rounded mb-0 inline-flex items-center copy-button"
+            className="transition-all ease-in-out duration-200 bg-[#414141] hover:bg-[#0f0f0f] hover:shadow-[inset_0_0_0_1.5px_#888888] pl-2 pr-1 p-2 rounded mb-0 inline-flex items-center copy-button"
           >
             haideraziz428@gmail.com
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
               fill="currentColor"
-              class="w-5 h-5 ml-1 text-yellow-300"
+              className="w-5 h-5 ml-1 text-yellow-300"
             >
               <path d="M17 2H7c-1.1 0-1.99.89-1.99 1.99L5 20.01C5 21.1 5.9 22 7 22h10c1.1 0 1.99-.89 1.99-1.99L19 3.99C19 2.89 18.1 2 17 2zM16 17H8v-2h8v2zm0-4H8v-2h8v2zm0-4H8V7h8v2z" />
             </svg>
