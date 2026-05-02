@@ -14,10 +14,12 @@ const Header = () => {
   return (
     <header className="site-header">
       <div className="header-inner">
-        <Link to="/" className="site-logo" aria-label="Go to home">
-          <span className="logo-bracket">&lt;</span>
-          <span>haidar</span>
-          <span className="logo-bracket">/&gt;</span>
+        <Link to="/" aria-label="Go to home">
+          <img
+            src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExdTdndmxsZzh6ZnB5OTI1aWtoa2pteHA0NzM1NGI1aDJ5d3hhYmpqNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9cw/F8JPm4ZlbE4UNjxT9Y/200.webp"
+            alt="HaidarCodes logo"
+            className="site-logo"
+          />
         </Link>
 
         <nav aria-label="Main navigation">
